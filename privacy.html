@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<title>Privacy policy - Challengers</title>
+<style>
+:root{color-scheme:light dark;--bg:#fff;--fg:#14171f;--dim:#4a5160;--line:#d8dce5;--card:#f3f5f9;--accent:#0b7f86}
+@media (prefers-color-scheme:dark){:root{--bg:#0d1018;--fg:#e8ebf2;--dim:#a2a9b8;--line:#2a3040;--card:#161b26;--accent:#4fd1d9}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans","Noto Sans Arabic",Tahoma,sans-serif}
+.wrap{max-width:46rem;margin:0 auto;padding:1rem 1.1rem 3rem}
+nav{display:flex;flex-wrap:wrap;gap:.4rem 1.1rem;align-items:center;padding:.6rem 0;border-bottom:1px solid var(--line);font-size:.95rem}
+nav a{color:var(--accent);text-decoration:none;font-weight:600} nav a[aria-current]{color:var(--fg);border-bottom:2px solid var(--accent)} nav .sp{flex:1}
+h1{font-size:1.9rem;line-height:1.25;margin:1.4rem 0 .2rem} h2{font-size:1.25rem;margin:2rem 0 .4rem}
+.meta{color:var(--dim);font-size:.9rem;margin:0 0 1rem}
+p{margin:.55rem 0} ul{margin:.4rem 0 .6rem;padding-inline-start:1.3rem} li{margin:.35rem 0}
+a{color:var(--accent)}
+table{width:100%;border-collapse:collapse;margin:.7rem 0;font-size:.95rem} th,td{border:1px solid var(--line);padding:.5rem .6rem;vertical-align:top;text-align:start}
+th{background:var(--card)} td.n{font-family:ui-monospace,Consolas,monospace;font-size:.85rem;white-space:nowrap;direction:ltr;text-align:left}
+.note{background:var(--card);border:1px solid var(--line);border-radius:.6rem;padding:.7rem .9rem;color:var(--dim);font-size:.92rem;margin-top:2rem}
+footer{color:var(--dim);font-size:.85rem;margin-top:2.5rem;border-top:1px solid var(--line);padding-top:.8rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><a href="index.html">Home</a><a href="privacy.html" aria-current="page">Privacy policy</a><a href="terms.html">Terms of use</a><a href="credits.html">Credits</a><span class="sp"></span><a href="privacy.ar.html" lang="ar" hreflang="ar">العربية</a></nav>
+<h1>Privacy policy</h1>
+<p class="meta">game version 2.8.3 &middot; policy version 1 &middot; in force from 4 November 2026</p>
+<h2>The short version</h2>
+<ul><li>Challengers collects <strong>no personal data</strong>. It has no accounts, no ads, no analytics and no crash-reporting service.</li><li>The game has <strong>no internet permission</strong>, so it cannot send anything over the internet. There is no server behind it.</li><li>The only things it saves are <strong>your settings and your match history, on your own phone</strong>.</li><li>It uses Bluetooth only to find and play with a friend's phone nearby.</li><li>You can delete everything it saved: Settings &gt; General &gt; My data &gt; DELETE ALL.</li></ul>
+<h2>Who is responsible</h2>
+<p>the Challengers project, run by an individual developer (not a company). You can write to <a href="mailto:mohamedyounis248@gmail.com.">mohamedyounis248@gmail.com.</a></p>
+<p>This page is a plain-language statement of what the game actually does. It is written by the developer. It is not legal advice and has not been reviewed by a lawyer.</p>
+<h2>What the game saves on your phone</h2>
+<ul><li>Your settings: language, volume, vibration, stick style and size, where your control buttons are, how you aim and dash, the camera, the match length, your chosen gun and arena, and the training-bot choices.</li><li>A random 4-digit <strong>match code</strong> the game makes up the first time you host a match. It is not connected to you in any way.</li><li>Which patch notes you have read.</li><li>Your <strong>Game History</strong>: for each match, when it ended, the arena, the two guns, who won, the rounds and kills, how long it lasted, and how many shots, Supers, dashes and walls you used. There are no names and nothing that identifies the other player.</li></ul>
+<p>All of this lives in the game's private storage on your phone. Other apps cannot read it, and the game never sends it anywhere.</p>
+<p>To remove it: use <strong>DELETE ALL</strong> in the game's settings, or Android Settings &gt; Apps &gt; Challengers &gt; Storage &gt; Clear storage, or uninstall the game.</p>
+<p>A note about Android itself: if you have Android's backup switched on, Android may copy an app's saved files to your Google account under Google's own rules. The game does not do this and cannot control it.</p>
+<h2>Bluetooth and nearby devices</h2>
+<p>To play with a friend the two phones talk <strong>directly to each other</strong> over Bluetooth Low Energy. Nothing goes through the internet or a server.</p>
+<ul><li>When you <strong>host</strong>, your phone announces a short tag so your friend's phone can find it: the game's own service identifier, the game version and the 4-digit match code. It does <strong>not</strong> announce your name, your phone's Bluetooth name or anything else about you. (Test builds before 2.8.2 also announced the phone's Bluetooth name while hosting. That was removed.)</li><li>Anyone nearby who has the game can see that a match is being hosted. The code decides which phone a friend joins; it is <strong>not a password</strong>. The hosting phone accepts only one connected phone.</li><li>During a match the phones exchange the match settings (arena, guns, score limit, round length and a random number), each player's controls (movement, aim and buttons) and checksums that detect when the two games disagree. Nothing from this exchange is stored.</li><li>The game does <strong>not</strong> add its own encryption to this exchange. Someone with Bluetooth sniffing equipment inside radio range could read the controls and the match settings. They contain no personal data.</li></ul>
+<p>The permissions the game asks for, and why:</p>
+<table><thead><tr><th>Permission</th><th>What it is for</th></tr></thead><tbody><tr><td class="n">android.permission.BLUETOOTH_SCAN</td><td>Nearby devices (Android 12 and newer): lets a joining phone look for the phone that is hosting a match. The game declares that it does not use this to find out where you are.</td></tr><tr><td class="n">android.permission.BLUETOOTH_ADVERTISE</td><td>Nearby devices (Android 12 and newer): lets the hosting phone announce that a match is waiting, with the game's version and the 4-digit match code.</td></tr><tr><td class="n">android.permission.BLUETOOTH_CONNECT</td><td>Nearby devices (Android 12 and newer): lets the two phones connect to each other and exchange the match.</td></tr><tr><td class="n">android.permission.BLUETOOTH</td><td>Bluetooth (Android 11 and older only): the older form of the permission above.</td></tr><tr><td class="n">android.permission.BLUETOOTH_ADMIN</td><td>Bluetooth settings (Android 11 and older only): the older form of the permissions above, needed to search for and announce a match.</td></tr><tr><td class="n">android.permission.ACCESS_FINE_LOCATION</td><td>Location (Android 11 and older only): those Android versions refuse to let ANY app look for Bluetooth devices unless it holds this permission. The game never reads your location.</td></tr><tr><td class="n">android.permission.VIBRATE</td><td>Vibration: a short buzz when your gun fires, when you are hit and when you are beaten. It can be switched off in Settings &gt; Gameplay.</td></tr></tbody></table>
+<h2>What the game does not do</h2>
+<ul><li>It does not go online. It has no internet permission.</li><li>It has no accounts and no sign-in.</li><li>It shows no ads and uses no advertising ID.</li><li>It has no analytics, tracking or crash-reporting service.</li><li>It does not read your location (see the table above), camera, microphone, contacts, photos, files or phone number.</li></ul>
+<h2>These web pages</h2>
+<p>The game's settings open this page and the Terms of use in your phone's browser. They are plain pages hosted on GitHub Pages. GitHub, as the host, may record that your address asked for a page, under GitHub's own privacy statement. The pages load no scripts, fonts, images or trackers from anywhere else. The game itself does not go online.</p>
+<h2>Children</h2>
+<p>Challengers is not designed for children under 13. It collects nothing from anyone, children included.</p>
+<h2>Your choices</h2>
+<p>You can delete everything the game saved at any time (see above). Because the developer holds no data about you, there is nothing on the developer's side to look up, correct or delete. If you have a question, write to <a href="mailto:mohamedyounis248@gmail.com.">mohamedyounis248@gmail.com.</a></p>
+<h2>Changes to this policy</h2>
+<p>The version and date are at the top of this page. If a future version of the game ever adds anything that collects or shares data (for example online play, ads or accounts), this page will change <strong>before</strong> that version is released, and the store's Data safety form will change with it.</p>
+<footer>Challengers 2.8.3 &middot; <a href="mailto:mohamedyounis248@gmail.com">mohamedyounis248@gmail.com</a></footer>
+</div>
+</body>
+</html>
